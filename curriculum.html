@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#" method="Post">
+        <h1>Curriculum Vitae</h1>
+        <fieldset>
+            <legend>Personal Data: </legend>
+            <label>DUI</label> <input type="text" placeholder="123456789" required pattern="[0-9]{9}">
+            <label>First Name: </label> <input type="text" placeholder="First Name" required pattern="[a-zA-Z]{1,10}">
+            <label>Last Name: </label> <input type="text" placeholder="Last Name" required pattern="[a-zA-Z]{1,10}">
+            <label>Gender </label> <input name="g" type="radio">Male <input name="g" type="radio">Female
+            <br>
+            <br>
+            <label>Contact Number: </label> <input type="text" pattern="[0-9]{9}">
+            <label>Birthdate</label> <input type="date">
+            <label>Civil Satus</label> <select><option>Single</option>
+                <option>Married</option>
+            </select>
+            <label>Image</label> <input type="file">
+        </fieldset>
+        <br>
+        <br>
+        <fieldset>
+            <legend>Work Experience</legend>
+            <textarea cols="220" rows="10" placeholder="Work Experience"></textarea>
+        </fieldset>
+        <br>
+        <br>
+        <fieldset>
+            <legend>Academic Training</legend>
+            <textarea cols="220" rows="10" placeholder="Academic Training"></textarea>
+        </fieldset>
+        <br>
+        <br>
+        <fieldset>
+            <legend>Further Training</legend>
+            <fieldset>
+                <legend>Programming Languages</legend>
+                <input type="checkbox" name="check[]">Java
+                <input type="checkbox" name="check[]">C#
+                <input type="checkbox" name="check[]">Phyton
+                <input type="checkbox" name="check[]">C++
+                <input type="checkbox" name="check[]">Ruby
+            </fieldset>
+            <br>
+            <fieldset>
+                    <legend>Web Technologies</legend>
+                    <input type="checkbox" name="check[]">HTML5
+                    <input type="checkbox" name="check[]">CSS/CSS3
+                    <input type="checkbox" name="check[]">materialize Css
+                    <input type="checkbox" name="check[]">Javascript
+                    <input type="checkbox" name="check[]">Node.js
+                    <input type="checkbox" name="check[]">Spring MVC
+                </fieldset>
+        </fieldset>
+        <br>
+        <input type="submit" value="Send">
+        <button><a href="index.html" style="text-decoration: none; color: black">Cancel</a></button>
+    </form>
+</body>
+</html>
